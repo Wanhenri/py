@@ -52,6 +52,8 @@ def plot_1_figura():
   plt.grid()
   plt.show()
   plt.savefig('graph1_11.png')
+  # Clear figure
+  plt.clf()
 
 
 def my_functions_1fig():
@@ -67,6 +69,7 @@ def my_functions_1fig():
   plt.grid()
   plt.show()
   plt.savefig('graph1_12.png')
+  plt.clf()
 
 
 def my_functions():
@@ -121,8 +124,8 @@ def my_functions():
   plt.tight_layout()
   plt.show()
   plt.savefig('graph3.png')
+  plt.clf()
 
 plot_1_figura()  
-# a função abaixo encontra-se com um erro de configuração. Necessário correção.
 my_functions_1fig()
 my_functions()
