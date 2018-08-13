@@ -1,10 +1,6 @@
-import pandas
-import pandas as pd
+
 import csv
-import matplotlib.pyplot as plt
-from matplotlib import style
 from matplotlib import pyplot as plt
-import plotly.plotly as py
 import numpy as np
 
 # obs.: verificar quais bibliotecas são necessárias ou não.
