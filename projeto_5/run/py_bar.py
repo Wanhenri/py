@@ -61,6 +61,10 @@ rects3 = plt.bar(index + bar_width + bar_width, p, bar_width,
 plt.xlabel('DIAS')
 plt.ylabel('Scores')
 plt.title('24h 12Z La_Plata')
+
+# para gerar a figura graphic3_1
+plt.plot(index, y, color='b', marker='s', label='Imerge-line')
+
 plt.legend()
 
 plt.ylim(ymin=0, ymax=20)
