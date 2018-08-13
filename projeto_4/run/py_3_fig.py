@@ -10,6 +10,7 @@ from matplotlib import pyplot as plt
 # d2 - 24Z NCEP la_plata
 # d3 - 24 SMG la_plata 
 
+
 x = []
 y = []
 
@@ -52,7 +53,6 @@ def plot_1_figura():
   plt.grid()
   plt.show()
   plt.savefig('graph1_11.png')
-  # Clear figure
   plt.clf()
 
 
@@ -126,6 +126,69 @@ def my_functions():
   plt.savefig('graph3.png')
   plt.clf()
 
+
+def my_functions_2_fig():
+  plt.subplot(2, 1, 1)
+  plt.plot(x,y, label='IMERGE - La_plata')
+  plt.plot(x,z, label='24h 12Z NCEP la_plata')
+  plt.plot(x,p, label='24h 12Z SMG la_plata')
+  plt.xlim(xmin=1, xmax=25)
+  plt.ylim(ymin=-2, ymax=30)
+  plt.xlabel('Dias')
+  plt.ylabel('')
+  plt.title('Serie temporal da Area La_Plata')
+  plt.legend()
+  plt.grid()
+
+  plt.subplot(2, 1, 2)
+  plt.plot(x,y, label='IMERGE - La_plata')
+  plt.plot(x,z, label='24h 12Z NCEP la_plata')
+  plt.plot(x,p, label='24h 12Z SMG la_plata')
+  plt.xlim(xmin=1, xmax=25)
+  plt.ylim(ymin=-2, ymax=30)
+  plt.xlabel('Dias')
+  plt.ylabel('')
+  plt.title('Serie temporal da Area La_Plata')
+  plt.legend()
+  plt.grid()
+
+  plt.tight_layout()
+  plt.show()
+  plt.savefig('graph4.png')
+  plt.clf()
+
+def my_functions_3_fig():
+  plt.subplot(2, 1, 1)
+  plt.plot(x,y, label='IMERGE - La_plata')
+  plt.plot(x,z, label='24h 12Z NCEP la_plata')
+  plt.plot(x,p, label='24h 12Z SMG la_plata')
+  plt.xlim(xmin=1, xmax=25)
+  plt.ylim(ymin=-2, ymax=30)
+  plt.xlabel('Dias')
+  plt.ylabel('')
+  plt.title('Serie temporal da Area La_Plata')
+  plt.legend()
+
+
+  plt.subplot(2, 1, 2)
+  plt.plot(x,y, label='IMERGE - La_plata')
+  plt.plot(x,z, label='24h 12Z NCEP la_plata')
+  plt.plot(x,p, label='24h 12Z SMG la_plata')
+  plt.xlim(xmin=1, xmax=25)
+  plt.ylim(ymin=-2, ymax=30)
+  plt.xlabel('Dias')
+  plt.ylabel('')
+  plt.title('Serie temporal da Area La_Plata')
+  plt.legend()
+ 
+
+  plt.tight_layout()
+  plt.show()
+  plt.savefig('graph4.png')
+  plt.clf()
+
 plot_1_figura()  
 my_functions_1fig()
 my_functions()
+my_functions_2_fig()
+my_functions_3_fig()
