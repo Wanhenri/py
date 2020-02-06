@@ -1,1 +1,4 @@
 https://github.com/servo/servo/issues/8857
+http://www.blackarbs.com/blog/advanced-time-series-plots-in-python/1/6/2017
+https://www.pythonforfinance.net/2018/02/07/stock-return-heatmap-using-seaborn/
+http://xarray.pydata.org/en/stable/plotting.html
